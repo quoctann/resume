@@ -1,26 +1,13 @@
-# ── Stage 1: Build ────────────────────────────────────────────
-FROM node:22-alpine AS builder
-
-WORKDIR /app
-
+FROM node:24-alpine AS builder
+WORKDIR /src
 COPY package*.json ./
 RUN npm ci
-
 COPY . .
 RUN npm run build
 
-# ── Stage 2: Serve ────────────────────────────────────────────
-FROM nginx:stable-alpine AS runner
 
-# Remove default nginx static assets
-RUN rm -rf /usr/share/nginx/html/*
-
-# Copy built assets from builder
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# nginx config for SPA (serves index.html for all routes)
+FROM FROM docker.io/nginxinc/nginx-unprivileged:1.31-alpine AS runner
+COPY --from=builder /src/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
