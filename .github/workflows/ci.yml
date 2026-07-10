@@ -12,25 +12,25 @@ env:
   IMAGE_NAMESPACE: ${{ github.repository_owner }}
 
 jobs:
-  # check:
-  #   name: Type-check & Lint
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
+  check:
+    name: Type-check & Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-  #     - uses: actions/setup-node@v4
-  #       with:
-  #         node-version: 22
-  #         cache: npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
-  #     - run: npm ci
-  #     - run: npm run build # tsc -b is included in the build script
+      - run: npm ci
+      - run: npm run build # tsc -b is included in the build script
 
   publish:
     name: Build & Push Image
     runs-on: ubuntu-latest
-    # needs: check
-    # if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     permissions:
       contents: read
@@ -42,7 +42,7 @@ jobs:
       - name: Set image tag
         id: tag
         run: echo "IMAGE_TAG=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
-      
+
       - name: Log in to GHCR
         uses: docker/login-action@v3
         with:
@@ -50,14 +50,15 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Extract metadata
-      #   id: meta
-      #   uses: docker/metadata-action@v5
-      #   with:
-      #     images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-      #     tags: |
-      #       type=sha,prefix=sha-
-      #       type=raw,value=latest,enable={{is_default_branch}}
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha,prefix=sha-
+            type=raw,value=latest,enable={{is_default_branch}}
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -67,8 +68,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/content-frontend:${{ steps.tag.outputs.IMAGE_TAG }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/content-frontend:latest
-          # labels: ${{ steps.meta.outputs.labels }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/resume:${{ steps.tag.outputs.IMAGE_TAG }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/resume:latest
+          labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
