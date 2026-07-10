@@ -1,0 +1,53 @@
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* ── Base ─────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  /* Hide sticky header and any non-resume UI */
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    font-size: 11pt;
+  }
+
+  /* Resume page fills paper */
+  .resume-page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0.5in !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Avoid section breaks in the middle of items */
+  .avoid-break {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
