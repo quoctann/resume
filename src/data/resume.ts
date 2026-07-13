@@ -8,22 +8,20 @@ import type { ResumeData } from "../types/resume";
 
 const resume: ResumeData = {
   contact: {
-    name: "Tran Quoc Tan",
+    name: "Trần Quốc Tấn",
     title: "Backend Developer",
     email: "contact.tantranquoc@gmail.com",
     phone: "+84 364 413 137",
+    linkedin: "https://www.linkedin.com/in/tantranquoc/",
   },
 
   // Upload your PDF to a CDN (Cloudflare R2, S3, Blob, etc.) and paste the URL here.
   // Leave as undefined to hide the download button until you have a hosted file.
   pdfUrl: undefined,
 
-  summary:
-    "Backend Developer with 3+ years of experience building web applications and distributed systems, " +
-    "primarily with Go. Experienced in REST, gRPC, and GraphQL APIs, microservices, " +
-    "PostgreSQL, MySQL, MongoDB, and Kubernetes environments. Skilled at translating requirements " +
-    "into maintainable backend features, integrating external and legacy systems, troubleshooting " +
-    "service issues, and collaborating with cross-functional teams in Agile environments.",
+  summary: [
+    "I am a Backend Developer with almost 4 years of experience building web applications and distributed systems, primarily using Go. I have experience designing and developing REST, gRPC, and GraphQL APIs, microservices, and backend services with PostgreSQL, MySQL, MongoDB, and Kubernetes. Throughout my career, I have worked on projects in healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, delivering maintainable backend features, and deploying applications through existing CI/CD pipelines. I also collaborate closely with clients, stakeholders, vendors, and cross-functional teams in Agile (Scrum) environments to translate business requirements into reliable technical solutions.",
+  ],
 
   experience: [
     {
@@ -38,15 +36,7 @@ const resume: ResumeData = {
         "Implemented scheduled invoice report delivery by collecting source data, rendering multi-page PDFs with Playwright-Go, uploading generated files to S3, and injecting report links into emails.",
         "Maintained Go microservices backed by PostgreSQL and MongoDB, investigating cross-service issues and troubleshooting defects.",
       ],
-      tech: [
-        "Go",
-        "gRPC",
-        "REST",
-        "PostgreSQL",
-        "MongoDB",
-        "S3",
-        "Kubernetes",
-      ],
+      tech: ["Go", "gRPC", "REST", "PostgreSQL", "MongoDB", "S3", "Kubernetes"],
     },
     {
       company: "FPT Software",

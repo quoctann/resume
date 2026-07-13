@@ -19,11 +19,18 @@ export default function App() {
           <ContactHeader contact={resume.contact} />
 
           {/* Summary */}
-          {resume.summary && (
+          {resume.summary && resume.summary.length > 0 && (
             <SectionBlock title="About">
-              <p className="text-xs text-gray-700 leading-relaxed">
-                {resume.summary}
-              </p>
+              <div className="space-y-2">
+                {resume.summary.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="text-xs text-gray-700 leading-relaxed"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </SectionBlock>
           )}
 
