@@ -12,7 +12,7 @@ const resume: ResumeData = {
     title: "Backend Developer",
     email: "contact.tantranquoc@gmail.com",
     phone: "+84 364 413 137",
-    linkedin: "https://www.linkedin.com/in/tantranquoc/",
+    linkedin: "linkedin.com/in/tantranquoc/",
   },
 
   // Upload your PDF to a CDN (Cloudflare R2, S3, Blob, etc.) and paste the URL here.
@@ -32,9 +32,10 @@ const resume: ResumeData = {
       description:
         "Developed backend capabilities for a B2B platform composed of Go microservices.",
       bullets: [
-        "Built REST and gRPC APIs for configuring marketing banners, carousels, and slides consumed by web applications.",
+        "Built REST and gRPC APIs for configuring marketing banners consumed by web applications.",
         "Implemented scheduled invoice report delivery by collecting source data, rendering multi-page PDFs with Playwright-Go, uploading generated files to S3, and injecting report links into emails.",
         "Maintained Go microservices backed by PostgreSQL and MongoDB, investigating cross-service issues and troubleshooting defects.",
+        "Applying AI to enhance development efficiency, including code generation, documentation, and testing.",
       ],
       tech: ["Go", "gRPC", "REST", "PostgreSQL", "MongoDB", "S3", "Kubernetes"],
     },
