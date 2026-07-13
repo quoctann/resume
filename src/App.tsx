@@ -3,6 +3,7 @@ import StickyHeader from "./components/StickyHeader";
 import ContactHeader from "./components/sections/ContactHeader";
 import SectionBlock from "./components/sections/SectionBlock";
 import Experience from "./components/sections/Experience";
+import Projects from "./components/sections/Projects";
 import Education from "./components/sections/Education";
 import Certifications from "./components/sections/Certifications";
 import Languages from "./components/sections/Languages";
@@ -52,6 +53,11 @@ export default function App() {
           {/* Languages */}
           {resume.languages && resume.languages.length > 0 && (
             <Languages languages={resume.languages} />
+          )}
+
+          {/* Side projects */}
+          {resume.projects && resume.projects.length > 0 && (
+            <Projects projects={resume.projects} />
           )}
         </div>
       </main>

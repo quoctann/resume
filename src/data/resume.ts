@@ -104,6 +104,27 @@ const resume: ResumeData = {
     },
   ],
 
+  projects: [
+    {
+      name: "K3s Homelab",
+      description:
+        "A personal Kubernetes environment for self-hosting and deploying applications.",
+      bullets: [
+        "Built and operated a K3s homelab to deploy containerized applications and gain hands-on experience managing self-hosted infrastructure.",
+        "Containerized this resume with a multi-stage Docker build and unprivileged Nginx, then automated GHCR image publishing and GitOps manifest updates through GitHub Actions.",
+      ],
+      tech: [
+        "K3s",
+        "Kubernetes",
+        "Docker",
+        "GitHub Actions",
+        "GHCR",
+        "GitOps",
+        "Nginx",
+      ],
+    },
+  ],
+
   education: [
     {
       institution: "Ho Chi Minh City Open University",
