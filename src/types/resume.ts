@@ -23,9 +23,13 @@ export interface ExperienceItem {
   company: string;
   role: string;
   location?: string;
-  startDate: string;   // e.g. "Jan 2022"
-  endDate: string;     // e.g. "Present"
+  startDate: string; // e.g. "Jan 2022"
+  endDate: string; // e.g. "Present"
+  description?: string;
   bullets: string[];
+  tech?: string[];
+  teamSize?: number;
+  methodology?: string;
 }
 
 export interface EducationItem {
@@ -35,7 +39,7 @@ export interface EducationItem {
   location?: string;
   startDate?: string;
   endDate: string;
-  notes?: string[];    // GPA, honors, relevant coursework, etc.
+  notes?: string[]; // GPA, honors, relevant coursework, etc.
 }
 
 export interface ProjectItem {
@@ -51,6 +55,11 @@ export interface CertificationItem {
   issuer: string;
   date?: string;
   url?: string;
+}
+
+export interface LanguageItem {
+  name: string;
+  proficiency?: string;
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -72,4 +81,5 @@ export interface ResumeData {
   education?: EducationItem[];
   projects?: ProjectItem[];
   certifications?: CertificationItem[];
+  languages?: LanguageItem[];
 }

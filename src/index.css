@@ -1,5 +1,5 @@
 /* Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   background: #f3f4f6;
   color: #111827;
   -webkit-font-smoothing: antialiased;
@@ -44,6 +44,10 @@ body {
   /* Avoid section breaks in the middle of items */
   .avoid-break {
     break-inside: avoid;
+  }
+
+  .section-heading {
+    break-after: avoid;
   }
 
   a {
