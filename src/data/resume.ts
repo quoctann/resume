@@ -17,7 +17,7 @@ const resume: ResumeData = {
 
   // Upload your PDF to a CDN (Cloudflare R2, S3, Blob, etc.) and paste the URL here.
   // Leave as undefined to hide the download button until you have a hosted file.
-  pdfUrl: "https://raw.githubusercontent.com/quoctann/resume/Backend_Golang_TranQuocTan_CV.pdf",
+  pdfUrl: "https://raw.githubusercontent.com/quoctann/resume/main/Backend_Golang_TranQuocTan_CV.pdf",
 
   summary: [
     "I am a Backend Developer with almost 4 years of experience building web applications and distributed systems, primarily using Go. I have experience designing and developing REST, gRPC, and GraphQL APIs, microservices, and backend services with PostgreSQL, MySQL, MongoDB, and Kubernetes. Throughout my career, I have worked on projects in healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, delivering maintainable backend features, and deploying applications through existing CI/CD pipelines. I also collaborate closely with clients, stakeholders, vendors, and cross-functional teams in Agile (Scrum) environments to translate business requirements into reliable technical solutions.",
