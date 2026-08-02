@@ -15,7 +15,7 @@ export default function Education({ education }: Props) {
               <span className="text-xs font-bold text-gray-900">{item.institution}</span>
               {(item.startDate || item.endDate) && (
                 <span className="text-xs text-gray-600 shrink-0">
-                  {item.startDate ? `${item.startDate} – ` : ''}{item.endDate}
+                  {item.startDate ? `${item.startDate} - ` : ''}{item.endDate}
                 </span>
               )}
             </div>

@@ -22,6 +22,12 @@ body {
 
 /* ── Print styles ─────────────────────────────────────── */
 @media print {
+  /* Force exact colors on paper so grays don't get faded/adjusted */
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   /* Hide sticky header and any non-resume UI */
   .no-print {
     display: none !important;

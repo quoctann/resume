@@ -17,8 +17,8 @@ export default function Projects({ projects }: Props) {
                   {item.name}
                 </span>
                 {item.tech && (
-                  <span className="text-xs text-gray-500">
-                    — {item.tech.join(", ")}
+                  <span className="text-xs text-gray-700">
+                    - {item.tech.join(", ")}
                   </span>
                 )}
               </div>

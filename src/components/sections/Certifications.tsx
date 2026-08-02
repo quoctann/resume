@@ -13,10 +13,10 @@ export default function Certifications({ certifications }: Props) {
           <div key={i} className="flex justify-between items-baseline text-xs">
             <div className="flex items-baseline gap-1.5">
               <span className="font-semibold text-gray-900">{cert.name}</span>
-              <span className="text-gray-500">— {cert.issuer}</span>
+              <span className="text-gray-700">- {cert.issuer}</span>
             </div>
             {cert.date && (
-              <span className="text-gray-500 shrink-0">{cert.date}</span>
+              <span className="text-gray-600 shrink-0">{cert.date}</span>
             )}
           </div>
         ))}

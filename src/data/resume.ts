@@ -32,12 +32,13 @@ const resume: ResumeData = {
       description:
         "Developed backend capabilities for a B2B platform composed of Go microservices.",
       bullets: [
+        "Implement payment services for deposit workflows, including payment gateway integration, transaction processing, and reconciliation.",
         "Built REST and gRPC APIs for configuring marketing banners consumed by web applications.",
         "Implemented scheduled invoice report delivery by collecting source data, rendering multi-page PDFs with Playwright-Go, uploading generated files to S3, and injecting report links into emails.",
         "Maintained Go microservices backed by PostgreSQL and MongoDB, investigating cross-service issues and troubleshooting defects.",
         "Applying AI to enhance development efficiency, including code generation, documentation, and testing.",
       ],
-      tech: ["Go", "gRPC", "REST", "PostgreSQL", "MongoDB", "S3", "Kubernetes"],
+      tech: ["Go", "gRPC", "REST", "PostgreSQL", "MongoDB", "Kubernetes"],
     },
     {
       company: "FPT Software",

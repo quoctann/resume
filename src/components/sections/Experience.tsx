@@ -16,7 +16,7 @@ export default function Experience({ experience }: Props) {
                 {item.role}
               </span>
               <span className="text-xs text-gray-600 shrink-0">
-                {item.startDate} – {item.endDate}
+                {item.startDate} - {item.endDate}
               </span>
             </div>
             <div className="flex flex-wrap justify-between items-baseline gap-x-3">
