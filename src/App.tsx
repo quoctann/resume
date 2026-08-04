@@ -2,6 +2,7 @@ import resume from "./data/resume";
 import StickyHeader from "./components/StickyHeader";
 import ContactHeader from "./components/sections/ContactHeader";
 import SectionBlock from "./components/sections/SectionBlock";
+import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
 import Projects from "./components/sections/Projects";
 import Education from "./components/sections/Education";
@@ -33,6 +34,11 @@ export default function App() {
                 ))}
               </div>
             </SectionBlock>
+          )}
+
+          {/* Skills */}
+          {resume.skills && resume.skills.length > 0 && (
+            <Skills skills={resume.skills} />
           )}
 
           {/* Experience */}
