@@ -29,10 +29,9 @@ const resume: ResumeData = {
       category: "Technologies",
       items: [
         "Go Programming Language",
-        "PostgreSQL",
-        "Kubernetes",
         "Microservices",
-        "Agile",
+        "Kubernetes",
+        "PostgreSQL"
       ],
     },
   ],
@@ -52,7 +51,16 @@ const resume: ResumeData = {
         "Maintained Go microservices backed by PostgreSQL and MongoDB, investigating cross-service issues and troubleshooting defects.",
         "Applying AI to enhance development efficiency, including code generation, documentation, and testing.",
       ],
-      tech: ["Go", "gRPC", "REST", "PostgreSQL", "MongoDB", "Kubernetes"],
+      tech: [
+        "Go",
+        "gRPC",
+        "REST",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Kubernetes",
+      ],
+      teamSize: 10,
     },
     {
       company: "FPT Software",
