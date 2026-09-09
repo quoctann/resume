@@ -8,7 +8,7 @@ interface Props {
 export default function Experience({ experience }: Props) {
   return (
     <SectionBlock title="Work Experiences">
-      <div className="space-y-3">
+      <div className="space-y-3 print:space-y-2">
         {experience.map((item, i) => (
           <div key={i} className="avoid-break">
             <div className="flex flex-wrap justify-between items-baseline gap-x-3">

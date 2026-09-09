@@ -15,7 +15,7 @@ export default function ContactHeader({ contact }: Props) {
   ].filter(Boolean) as { label: string; href: string | null }[];
 
   return (
-    <div className="text-center mb-5">
+    <div className="text-center mb-5 print:mb-3">
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 uppercase mb-0.5">
         {contact.name}
       </h1>

@@ -5,9 +5,9 @@ interface Props {
 
 export default function SectionBlock({ title, children }: Props) {
   return (
-    <section className="mb-4">
+    <section className="mb-4 print:mb-2.5">
       {/* Section heading with Harvard-style rule */}
-      <div className="section-heading flex items-center gap-2 mb-1.5">
+      <div className="section-heading flex items-center gap-2 mb-1.5 print:mb-1">
         <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 whitespace-nowrap">
           {title}
         </h2>

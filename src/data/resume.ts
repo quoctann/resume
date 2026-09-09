@@ -21,17 +21,33 @@ const resume: ResumeData = {
     "https://raw.githubusercontent.com/quoctann/resume/main/Backend_Golang_TranQuocTan_CV.pdf",
 
   summary: [
-    "I am a Backend Developer with almost 4 years of experience building web applications and distributed systems, primarily using Go. I have experience designing and developing REST, gRPC, and GraphQL APIs, microservices, and backend services with PostgreSQL, MySQL, MongoDB, and Kubernetes. Throughout my career, I have worked on projects in healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, delivering maintainable backend features, and deploying applications through existing CI/CD pipelines. I also collaborate closely with clients, stakeholders, vendors, and cross-functional teams in Agile (Scrum) environments to translate business requirements into reliable technical solutions.",
+    "Backend Developer with almost 4 years of experience building and maintaining backend services, with a primary focus on Go and microservice-based systems. Hands-on experience with REST and gRPC APIs, PostgreSQL, MongoDB, and Kubernetes environments. Worked across healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, and deploying through existing CI/CD pipelines. Comfortable using AI-assisted development tools to speed up day-to-day coding, testing, and documentation. Collaborates well with clients, stakeholders, and cross-functional teams in Agile (Scrum) environments.",
   ],
 
   skills: [
     {
-      category: "Technologies",
+      category: "Languages",
+      items: ["Go", "TypeScript", "SQL"],
+    },
+    {
+      category: "APIs & Architecture",
+      items: ["REST", "gRPC", "GraphQL", "Microservices"],
+    },
+    {
+      category: "Databases",
+      items: ["PostgreSQL", "MongoDB", "Redis"],
+    },
+    {
+      category: "Infrastructure & Delivery",
+      items: ["Docker", "Kubernetes", "CI/CD", "Azure DevOps", "Git"],
+    },
+    {
+      category: "Practices & Tools",
       items: [
-        "Go Programming Language",
-        "Microservices",
-        "Kubernetes",
-        "PostgreSQL"
+        "Unit Testing",
+        "Code Review",
+        "Agile/Scrum",
+        "AI-assisted Development (OpenCode, ClaudeCode, Copilot)",
       ],
     },
   ],
@@ -45,11 +61,11 @@ const resume: ResumeData = {
       description:
         "Developed backend capabilities for a B2B platform composed of Go microservices.",
       bullets: [
-        "Implement payment services for deposit workflows, including payment gateway integration, transaction processing, and reconciliation.",
-        "Built REST and gRPC APIs for configuring marketing banners consumed by web applications.",
-        "Implemented scheduled invoice report delivery by collecting source data, rendering multi-page PDFs with Playwright-Go, uploading generated files to S3, and injecting report links into emails.",
+        "Contributed to payment services for deposit workflows, including payment gateway integration, transaction processing, and reconciliation.",
+        "Developed REST and gRPC APIs features consumed by web applications.",
+        "Built an automated reporting workflow generating PDF reports (Playwright-Go) and delivering them via S3-hosted links on a schedule.",
         "Maintained Go microservices backed by PostgreSQL and MongoDB, investigating cross-service issues and troubleshooting defects.",
-        "Applying AI to enhance development efficiency, including code generation, documentation, and testing.",
+        "Used AI-assisted tools (Open Code, Claude Code, Copilot) to speed up code generation, documentation, and testing.",
       ],
       tech: [
         "Go",
