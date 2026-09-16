@@ -13,6 +13,7 @@ const resume: ResumeData = {
     email: "contact.tantranquoc@gmail.com",
     phone: "+84 364 413 137",
     linkedin: "linkedin.com/in/tantranquoc/",
+    github: "github.com/quoctann",
   },
 
   // Upload your PDF to a CDN (Cloudflare R2, S3, Blob, etc.) and paste the URL here.
@@ -21,7 +22,7 @@ const resume: ResumeData = {
     "https://raw.githubusercontent.com/quoctann/resume/main/Backend_Golang_TranQuocTan_CV.pdf",
 
   summary: [
-    "Backend Developer with almost 4 years of experience building and maintaining backend services, with a primary focus on Go and microservice-based systems. Hands-on experience with REST and gRPC APIs, PostgreSQL, MongoDB, and Kubernetes environments. Worked across healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, and deploying through existing CI/CD pipelines. Comfortable using AI-assisted development tools to speed up day-to-day coding, testing, and documentation. Collaborates well with clients, stakeholders, and cross-functional teams in Agile (Scrum) environments.",
+    "Backend Developer with 4 years of experience building and maintaining backend services, with a primary focus on Go and microservice-based systems. Hands-on experience with REST and gRPC APIs, PostgreSQL, MongoDB, and Kubernetes environments. Worked across healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, and deploying through existing CI/CD pipelines. Comfortable using AI-assisted development tools to speed up day-to-day coding, testing, and documentation. Collaborates well with clients, stakeholders, and cross-functional teams in Agile (Scrum) environments.",
   ],
 
   skills: [
