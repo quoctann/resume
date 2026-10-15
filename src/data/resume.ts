@@ -58,7 +58,7 @@ const resume: ResumeData = {
       company: "Mercury Studio",
       role: "Backend Developer - B2B Gaming Platform",
       startDate: "Dec 2025",
-      endDate: "Jul 2026",
+      endDate: "Sep 2026",
       description:
         "Developed backend capabilities for a B2B platform composed of Go microservices.",
       bullets: [
