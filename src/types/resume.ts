@@ -75,6 +75,7 @@ export interface ResumeData {
    * Leave undefined to hide the download button.
    */
   pdfUrl?: string;
+  githubUrl?: string;
   summary?: string[];
   skills?: SkillGroup[];
   experience?: ExperienceItem[];

@@ -12,7 +12,11 @@ import Languages from "./components/sections/Languages";
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <StickyHeader contact={resume.contact} pdfUrl={resume.pdfUrl} />
+      <StickyHeader
+        contact={resume.contact}
+        pdfUrl={resume.pdfUrl}
+        githubUrl={resume.githubUrl}
+      />
 
       {/* Resume page — this is what gets printed */}
       <main className="py-8 px-4 print:p-0 print:py-0">

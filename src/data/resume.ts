@@ -13,13 +13,14 @@ const resume: ResumeData = {
     email: "contact.tantranquoc@gmail.com",
     phone: "+84 364 413 137",
     linkedin: "linkedin.com/in/tantranquoc/",
-    github: "github.com/quoctann",
+    // github: "github.com/quoctann",
   },
 
   // Upload your PDF to a CDN (Cloudflare R2, S3, Blob, etc.) and paste the URL here.
   // Leave as undefined to hide the download button until you have a hosted file.
   pdfUrl:
-    "https://raw.githubusercontent.com/quoctann/resume/main/Backend_Golang_TranQuocTan_CV.pdf",
+    "https://raw.githubusercontent.com/quoctann/resume/main/TranQuocTan_Backend_CV.pdf",
+  githubUrl: "https://github.com/quoctann/resume",
 
   summary: [
     "Backend Developer with 4 years of experience building and maintaining backend services, with a primary focus on Go and microservice-based systems. Hands-on experience with REST and gRPC APIs, PostgreSQL, MongoDB, and Kubernetes environments. Worked across healthcare, insurance, e-commerce, and gaming platforms, integrating external and legacy systems, and deploying through existing CI/CD pipelines. Comfortable using AI-assisted development tools to speed up day-to-day coding, testing, and documentation. Collaborates well with clients, stakeholders, and cross-functional teams in Agile (Scrum) environments.",
@@ -57,7 +58,7 @@ const resume: ResumeData = {
     {
       company: "Mercury Studio",
       role: "Backend Developer - B2B Gaming Platform",
-      startDate: "Dec 2025",
+      startDate: "2025",
       endDate: "Sep 2026",
       description:
         "Developed backend capabilities for a B2B platform composed of Go microservices.",
@@ -152,17 +153,9 @@ const resume: ResumeData = {
         "A personal Kubernetes environment for self-hosting and deploying applications.",
       bullets: [
         "Built and operated a K3s homelab to deploy containerized applications and gain hands-on experience managing self-hosted infrastructure.",
-        "Containerized this resume with a multi-stage Docker build and unprivileged Nginx, then automated GHCR image publishing and GitOps manifest updates through GitHub Actions.",
+        "This résumé is one of my side projects, with CI/CD automated through GitHub Actions and Argo CD. It's hosted on a single-node K3s cluster running on my home PC and accessible at https://quoctan.io.vn",
       ],
-      tech: [
-        "K3s",
-        "Kubernetes",
-        "Docker",
-        "GitHub Actions",
-        "GHCR",
-        "GitOps",
-        "Nginx",
-      ],
+      tech: ["Kubernetes", "GitOps", "K3s", "Docker", "GitHub Actions"],
     },
   ],
 
